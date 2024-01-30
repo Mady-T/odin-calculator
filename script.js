@@ -48,6 +48,15 @@ buttonContainer.addEventListener('click', (e) => {
         for (const elem of document.querySelectorAll('.operator')) {
             elem.classList.remove('active');
         }
+    } else if (clickedButton.id === 'backspace') {
+        inputField.value = inputField.value.slice(0,-1);
+    } else if (clickedButton.id === 'sign') {
+        if (inputField.value) {
+            inputField.value *= -1;
+        } else {
+            inputField.value = '-'
+        }
+
     }
 });
 
@@ -62,6 +71,7 @@ function evaluate(a, b, operator) {
         case 'multiply':
             return a * b;
         case 'divide' :
+            if (b === 0) return "MATH ERROR";
             return a / b;
         case 'mod' :
             return a % b;
