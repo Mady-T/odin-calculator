@@ -1,0 +1,68 @@
+.outer-body {
+    height: 500px;
+    aspect-ratio: 3/4;
+    display: flex;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+}
+
+
+.inner-body {
+    display: flex;
+    margin: 10px;
+    background-color: #eeeeee;
+    flex-direction: column;
+    flex: auto;
+    padding: 5px;
+}
+
+.display-panel {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.left-display {
+    flex: 1;
+}
+
+.right-display {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.right-display .output {
+    flex: 1;
+}
+
+.output {
+    background-color: #496400;
+}
+
+.input {
+    flex: 1;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    background-color: #729b00;
+}
+
+
+.button-panel {
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    border-radius: 5px;
+}
+
