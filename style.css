@@ -1,6 +1,6 @@
 .outer-body {
     height: 500px;
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/3;
     display: flex;
     background-color: #0f0f0f;
     border-radius: 10px;
@@ -24,6 +24,9 @@
 
 .left-display {
     flex: 1;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: end;
 }
 
 .right-display {
@@ -45,6 +48,11 @@
     border-top: 1px solid black;
     border-left: 1px solid black;
     background-color: #729b00;
+    text-align: end;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -64,5 +72,18 @@ button {
     flex: 1;
     margin: 5px;
     border-radius: 5px;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.operator {
+    background-color: rgb(236, 63, 10);
+}
+
+.operator.active {
+    background-color: rgb(243, 130, 55);
 }
 
