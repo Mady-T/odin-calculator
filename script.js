@@ -4,7 +4,7 @@ const outputField = document.querySelector('.output')
 
 buttonContainer.addEventListener('click', (e) => {
     const clickedButton = e.target;
-    
+
     if (clickedButton.classList.contains('numeric')){
         inputField.value += clickedButton.textContent;
 
@@ -60,6 +60,10 @@ buttonContainer.addEventListener('click', (e) => {
             inputField.value = '-'
         }
 
+    } else if (clickedButton.id === 'dot') {
+        if (!inputField.value.includes('.')){
+            inputField.value += clickedButton.textContent;
+        }
     }
 });
 
