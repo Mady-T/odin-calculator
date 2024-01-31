@@ -9,8 +9,10 @@ body {
 }
 
 .outer-body {
-    height: 500px;
-    aspect-ratio: 4/3;
+    min-height: 500px;
+    max-width: 600px;
+    max-height: 800px;
+    min-width: 300px;
     display: flex;
     background-color: #0f0f0f;
     border-radius: 10px;
